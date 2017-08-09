@@ -1,0 +1,53 @@
+.table-nonfluid {
+    width: auto !important;
+}
+
+.btn-xlarge {
+    padding: 28px 50px;
+    font-size: 15px; //change this to your desired size
+    line-height: normal;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.top-buffer { margin-top:20px; }
+
+
+.invoice-font
+{
+    font-size:11px;
+}
+
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+}
+
+
+.sidebar-outer {
+    position: relative;
+}
+
+.sidebar{
+    max-height: none;
+    height:100%;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        position: fixed;
+    }
+}
+
+.carousel-inner > .item > table {
+    margin: 0 auto;
+}
+
+.pagination {
+    margin: 0px;
+}

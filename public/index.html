@@ -1,0 +1,32 @@
+<html ng-app="suus">
+	<head>
+		<title>SUUS-KASIR</title>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="bower_components/angular-ui-sortable/sortable.js"></script>
+
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+    
+        <script src="app.js"></script>
+        
+        <script src="js/invoices/controller.js"></script>
+        <script src="js/invoices/service.js"></script>
+        
+        <script src="js/invoices/invoice/controller.js"></script>
+        
+        <script src="js/invoices/invoice-edit/controller.js"></script>
+    </head>
+    
+    <body>
+        <div class="container-fluid">
+            <div ui-view></div>
+        </div>
+    </body>
+</html>

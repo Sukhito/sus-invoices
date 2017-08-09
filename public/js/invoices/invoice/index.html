@@ -1,0 +1,27 @@
+<div class="sidebar pre-scrollable">
+    <table class="table small table-nonfluid">
+        <tr>
+            <td colspan="2">
+                <button class="btn btn-primary btn-xs" ui-sref="invoices-edit({invoiceId:invoice._id})">edit</button>
+                <button class="btn btn-info btn-xs" ng-click="printInvoice()">print</button>
+            </td>
+            <td>Total = {{invoice.total|currency:'Rp ': 0}}</td>
+        </tr>
+        <tr class="active">
+            <td class="text-right"><strong>{{invoice.id}}</strong></td>
+            <td class="text-center" colspan="2">{{invoice.customer}} </td>
+            <td>{{invoice.date|date}} </td>
+        </tr>
+        <tr ng-repeat="invoiceItem in invoice.items">
+            <td class="text-right">{{invoiceItem.qty}} {{invoiceItem.unit}}</td>
+            <td>{{invoiceItem.name}}</td>
+            <td>{{invoiceItem.price|currency:'': 0}}</td>
+            <td>{{invoiceItem.lineTotal|currency:'': 0}}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3">Total = {{invoice.total|currency:'Rp ': 0}}</td>
+        </tr>
+        <tr></tr>
+    </table>
+</div>

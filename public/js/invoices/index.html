@@ -1,0 +1,26 @@
+<div class="col-xs-4">
+
+Nota Tanggal <span uib-dropdown on-toggle="toggled(open)">
+  	<a href id="simple-dropdown" uib-dropdown-toggle>
+    	{{date|date}}
+  	</a>
+    <div class="dropdown-menu" uib-dropdown-menu >
+      <div uib-datepicker ng-model="date" class="well well-sm" ng-change="getInvoices()" tabindex="-1"></div>
+    </div>
+</span>
+<button ng-click="newInvoice()">Nota Baru</button>
+
+<table class="table small table-nonfluid">
+	<tr ng-repeat="invoice in invoices|orderBy:'-date'" ui-sref="invoices.detail({invoiceId : invoice._id})">
+		<td><strong>{{invoice.id}}</strong></td>
+		<td>{{invoice.total|currency:'Rp ':0}}</td>
+		<td>{{invoice.customer}}</td>
+	</tr>
+</table>
+
+</div>
+
+
+<div class="col-xs-8 sidebar-outer"  ui-view>
+	
+</div>
